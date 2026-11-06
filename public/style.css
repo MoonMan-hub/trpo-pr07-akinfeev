@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f4f6fb;
+    color: #1f2937;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background: #111827;
+    color: white;
+    padding: 14px 38px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.logo img {
+    border-radius: 8px;
+}
+
+.nav a {
+    color: #cbd5e1;
+    text-decoration: none;
+    margin-left: 18px;
+}
+
+.nav a.active {
+    color: white;
+    font-weight: bold;
+    border-bottom: 2px solid #315efb;
+}
+
+.wrap {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 24px;
+}
+
+.hero,
+.box,
+.card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    padding: 24px;
+    margin-bottom: 20px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.hero-img {
+    width: 100%;
+    max-width: 360px;
+    border-radius: 14px;
+}
+
+.lead {
+    font-size: 18px;
+    color: #4b5563;
+}
+
+.muted {
+    color: #6b7280;
+}
+
+.pill {
+    display: inline-block;
+    background: #e9efff;
+    color: #315efb;
+    border-radius: 999px;
+    padding: 5px 10px;
+    font-size: 13px;
+}
+
+.btn {
+    display: inline-block;
+    background: #315efb;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.grid .card {
+    margin-bottom: 0;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.price {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 6px 0;
+}
+
+.error {
+    background: #fee2e2;
+    border-color: #fca5a5;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 760px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .header {
+        padding: 14px 20px;
+    }
+}
